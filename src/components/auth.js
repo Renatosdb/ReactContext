@@ -4,15 +4,14 @@ import { useUserSession } from '../user-context';
 const LogInForm = () => {
     const { logIn } = useUserSession()
     const [name, setName] = useState('')
-}
 
-function onSubmit(e) {
-    e.preventDefault()
-    logIn(name)
+    function onSubmit(e) {
+        e.preventDefault()
+        logIn(name)
 }
 
 return (
-    <form className="mx-auto w-25" onSubmit="onSubmit">
+    <form className="mx-auto w-25" onSubmit={onSubmit}>
         <h2>Log In</h2>
         <div className="card">
             <div className="card-body">
@@ -46,14 +45,14 @@ const Auth = () => {
         e.preventDefault()
         logOut()
     }
-}
+
 
 return (
     <div>
         <p>You are logged in {user.displayName}</p>
         <button className="btn btn-outline-danger" onClick={onClick}>Log Out</button>
     </div>
-)
+    )
 }
 
 export default Auth;

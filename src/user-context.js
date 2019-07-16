@@ -7,6 +7,6 @@ export const UserSessionContext = createContext({
 })
 
 export function useUserSession() {
-    const { user, logIn, logOut } = useContext{UserSessionContext}
+    const { user, logIn, logOut } = useContext(UserSessionContext)
     return { user, logIn, logOut }
 }

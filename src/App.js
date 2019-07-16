@@ -1,8 +1,8 @@
 import React, { useState} from 'react';
 import './App.css';
-import { UserSessionContext, UserSessionContext } from './user-context';
+import { UserSessionContext } from './user-context';
 
-import Navbar from './component/navbar';
+import Navbar from './components/navbar';
 import Auth from './components/auth';
 
 const GUEST_USER = {__guest: true, displayName: 'Guest'}

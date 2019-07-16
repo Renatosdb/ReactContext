@@ -16,7 +16,7 @@ const ProfileNav = () => {
             </li>
             {!user.__guest && (
                 <li className="nav-item">
-                    <a className="nav-link" href="#" onClick={onClick}>Log Out</a>
+                    <a className="nav-link" href="/" onClick={onClick}>Log Out</a>
                 </li>
             )}
         </ul>
