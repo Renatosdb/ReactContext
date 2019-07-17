@@ -12,11 +12,11 @@ const LogInForm = () => {
 
 return (
     <form className="mx-auto w-25" onSubmit={onSubmit}>
-        <h2>Log In</h2>
+        <h2>Log In here!</h2>
         <div className="card">
             <div className="card-body">
                 <div className="form-group">
-                    <label>name: </label>
+                    <label>And I know you are: </label>
                     <input
                     className="form-control"
                     type="text"
@@ -26,9 +26,12 @@ return (
                     />
                 </div>
                 <div className="text-right">
-                    <button className="btn btn-primary">Log In</button>
+                    <button className="btn btn-primary">Log In again!</button>
                 </div>
             </div>
+        </div>
+        <div>
+            <h5>Not sure what to do here yet... add new component!</h5>
         </div>
     </form>
 )
